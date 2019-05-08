@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>lol</title>
+  </head>
+  <body>
+    <article class="search_pattern">
+    <h2>Поиск подстроки в строке</h2>
+    <p>Введите строку</p><br>
+    <input type="text" id = "main_str" maxlength =5000000 value="">
+    <p>Введите образ</p><br>
+    <input type="text" id="pattern" maxlength = 15000 value="">
+    <br>
+    <br>
+    <button type="button" id = "search_pattern_button">Поиск подстроки в строке</button>
+    <div class = "result_pattern" id="result_pattern"></div>
+    </article>
+
+    <article class="search_loop">
+    <h2>Поиск циклического сдвига</h2>
+    <p>Введите строку с циклическим сдвигом</p><br>
+    <input type="text" id = "main_string" maxlength=5000000 value="">
+    <p>Введите исходную строку</p><br>
+    <input type="text" id="loop_string" maxlength=5000000 value="">
+    <br>
+    <br>
+    <button type="button" id = "search_loop_button">Поиск подстроки в строке</button>
+    <div class = "result_loop" id="result_loop"></div>
+    </article>
+
+
+    <script src="dist/bundle.js"></script>
+  </body>
+  <!-- <script src="kmp.js"></script> -->
+
+</html>
